@@ -18,3 +18,4 @@ sudo apt update
 
 #Install Terraform from the new repository.
 sudo apt install terraform
+terraform --version
