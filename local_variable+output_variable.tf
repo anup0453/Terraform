@@ -17,3 +17,10 @@ resource "aws_instance" "main" {
     Name = "ubuntu"
   }
 }
+
+# output variable for printing the parameters of instance .public_ip used to print public ip. 
+
+output "all_information" {
+        value = aws_instance.main.public_ip
+        sensitive = "true"
+}
